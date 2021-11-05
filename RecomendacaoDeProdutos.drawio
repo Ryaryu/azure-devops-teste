@@ -1,1 +1,94 @@
-<mxfile host="app.diagrams.net" modified="2021-11-05T19:04:43.582Z" agent="5.0 (X11)" version="15.2.4" etag="Ua3O3qI83VBTNZvQlckW" type="github"><diagram id="qHTu9Loi3MfqdFTXG22g">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-05T19:15:48.660Z" agent="5.0 (X11)" etag="DE4vXoReK9TlnWKv0SzI" version="15.2.4" type="github">
+  <diagram id="qHTu9Loi3MfqdFTXG22g" name="Page-1">
+    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-3" value="Geração da Requisição" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="820" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-3" source="Ne7PP4FZMZv3KM1NnsqH-1" target="Ne7PP4FZMZv3KM1NnsqH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-7" value="Chamada REST/GRPC/GraphQL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-5">
+          <mxGeometry x="-0.088" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-1" value="&lt;div&gt;GMCore&lt;/div&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/sphericalcons/128/file_c-plus--plus.png" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-3">
+          <mxGeometry x="40" y="60" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-3" source="Ne7PP4FZMZv3KM1NnsqH-2" target="Ne7PP4FZMZv3KM1NnsqH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-8" value="Gera mensagem pra cada &lt;br&gt;configuração possível" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-6">
+          <mxGeometry x="0.0992" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-2" value="&lt;div&gt;BFF - Recomendação&lt;/div&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-3">
+          <mxGeometry x="360" y="63" width="68" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-4" value="Topico no Kafka&lt;br&gt;&quot;compras.recomendacao.configuracao&quot;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-3">
+          <mxGeometry x="670" y="56" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-9" value="Processamento da Requisição" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="20" y="260" width="820" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-10" value="Topico no Kafka&lt;br&gt;&quot;compras.recomendacao.configuracao&quot;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-9">
+          <mxGeometry x="80" y="60" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-9" source="Ne7PP4FZMZv3KM1NnsqH-11" target="Ne7PP4FZMZv3KM1NnsqH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-15" value="Recebe mensagem com &lt;br&gt;&lt;div&gt;configuração de compra&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-13">
+          <mxGeometry x="-0.0815" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-9" source="Ne7PP4FZMZv3KM1NnsqH-11" target="Ne7PP4FZMZv3KM1NnsqH-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-16" value="Salva o processamento&lt;br&gt;e o status dessa configuração &lt;br&gt;no banco" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-14">
+          <mxGeometry x="-0.1215" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-11" value="Archetype Kafka" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-9">
+          <mxGeometry x="390" y="68" width="68" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-12" value="Postgres" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-9">
+          <mxGeometry x="670" y="58" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-25" value="Geração da Requisição" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="20" y="490" width="820" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-25" source="Ne7PP4FZMZv3KM1NnsqH-28" target="Ne7PP4FZMZv3KM1NnsqH-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-27" value="Consulta o status do processamento" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-26">
+          <mxGeometry x="-0.088" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-28" value="&lt;div&gt;GMCore&lt;/div&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/sphericalcons/128/file_c-plus--plus.png" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-25">
+          <mxGeometry x="40" y="60" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ne7PP4FZMZv3KM1NnsqH-25" source="Ne7PP4FZMZv3KM1NnsqH-31" target="Ne7PP4FZMZv3KM1NnsqH-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-35" value="Faz a contagem das mensagens&lt;br&gt;processadas e retorna a estatística" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ne7PP4FZMZv3KM1NnsqH-34">
+          <mxGeometry x="-0.1542" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-31" value="&lt;div&gt;BFF - Recomendação&lt;/div&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-25">
+          <mxGeometry x="390" y="63" width="68" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Ne7PP4FZMZv3KM1NnsqH-33" value="Postgres" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" vertex="1" parent="Ne7PP4FZMZv3KM1NnsqH-25">
+          <mxGeometry x="680" y="50" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
